@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bk0nk3r7avfvu"
-path="res://.godot/imported/ceiling.glb-cef1fb64e0771d0f9549a3cc0772808c.scn"
+path="res://.godot/imported/ceiling.glb-20bbf622f6f877aac376daf154b6f2db.scn"
 
 [deps]
 
-source_file="res://assets/dungeon_assets/building/ceiling.glb"
-dest_files=["res://.godot/imported/ceiling.glb-cef1fb64e0771d0f9549a3cc0772808c.scn"]
+source_file="res://building/scenes/ceiling.glb"
+dest_files=["res://.godot/imported/ceiling.glb-20bbf622f6f877aac376daf154b6f2db.scn"]
 
 [params]
 

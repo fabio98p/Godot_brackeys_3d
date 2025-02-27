@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bap6hrhgy51px"]
 
-[ext_resource type="PackedScene" uid="uid://bk0nk3r7avfvu" path="res://assets/dungeon_assets/building/ceiling.glb" id="1_5llar"]
+[ext_resource type="PackedScene" uid="uid://bk0nk3r7avfvu" path="res://building/scenes/ceiling.glb" id="1_5llar"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_07rrv"]
 points = PackedVector3Array(-2, -0.0500045, -2, -2, 0.484086, -2, 2, -0.0500045, -2, -2, -0.250001, -1.14722, -2, 0.484086, 2, 2, 0.484086, -2, 2, -0.250001, -1.14722, -2, -0.250001, 1.14683, -2, -0.0500045, 2, 2, 0.484086, 2, 2, -0.250001, 1.14683, 2, -0.0500045, 2)
