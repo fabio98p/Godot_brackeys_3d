@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dgvs2vh2u73e"]
+
+[ext_resource type="PackedScene" uid="uid://cja23mno6luf7" path="res://assets/dungeon_assets/building/wall_cracked.glb" id="1_o3sjf"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ay1su"]
+points = PackedVector3Array(2, 4, 0.5, 2, 0, 0.5, 2, 4, -0.5, -2, 4, 0.5, 2, 0, -0.5, -2, 0, 0.5, -2, 4, -0.5, -2, 0, -0.5)
+
+[node name="wall_cracked" type="StaticBody3D"]
+
+[node name="wall_cracked2" parent="." instance=ExtResource("1_o3sjf")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_ay1su")
