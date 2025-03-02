@@ -1,15 +1,18 @@
-[gd_scene load_steps=8 format=3 uid="uid://c82nuwfdxn8ed"]
+[gd_scene load_steps=12 format=3 uid="uid://c82nuwfdxn8ed"]
 
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_0ndof"]
+[ext_resource type="Texture2D" uid="uid://bca70c80rpvbk" path="res://assets/sky_background/autumn_field_puresky_4k.hdr" id="1_272bh"]
 [ext_resource type="PackedScene" uid="uid://c3a1kqpuvk6sa" path="res://object/scenes/chest.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://xe35wil3c21s" path="res://object/scenes/barrel.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://60h3a6vmr73p" path="res://building/scenes/wall_corner.tscn" id="4_7mycd"]
+[ext_resource type="PackedScene" uid="uid://b3pkso0oc4348" path="res://building/scenes/wall_doorway.tscn" id="5_272bh"]
+[ext_resource type="PackedScene" uid="uid://bew33ygcln7in" path="res://building/scenes/wall_windows.tscn" id="6_5vw27"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_as7nd"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_5vw27"]
+panorama = ExtResource("1_272bh")
 
 [sub_resource type="Sky" id="Sky_n64y3"]
-sky_material = SubResource("ProceduralSkyMaterial_as7nd")
+sky_material = SubResource("PanoramaSkyMaterial_5vw27")
 
 [sub_resource type="Environment" id="Environment_evlh3"]
 background_mode = 2
@@ -27,7 +30,7 @@ albedo_color = Color(1, 1, 0.219608, 0.505882)
 environment = SubResource("Environment_evlh3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.893372, -0.439337, 0.0941856, -0.0780234, 0.35812, 0.93041, -0.442493, 0.823853, -0.354213, -2.2, 28.8, 3.1)
+transform = Transform3D(-0.341701, -0.339989, -0.876155, -0.939788, 0.117477, 0.320932, -0.00618604, 0.933063, -0.35966, -2.2, 28.8, 3.1)
 shadow_enabled = true
 
 [node name="Floor" type="CSGBox3D" parent="."]
@@ -139,3 +142,33 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.7, 
 
 [node name="Barrel" parent="." instance=ExtResource("3_h2yge")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 3.07, 20.5)
+
+[node name="wall_corner" parent="." instance=ExtResource("4_7mycd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -2.053)
+
+[node name="wall_corner2" parent="." instance=ExtResource("4_7mycd")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1, -2)
+
+[node name="wall_doorway" parent="." instance=ExtResource("5_272bh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -2)
+
+[node name="wall_corner3" parent="." instance=ExtResource("4_7mycd")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8, 1, 10)
+
+[node name="wall_corner4" parent="." instance=ExtResource("4_7mycd")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 1, 10)
+
+[node name="wall_doorway2" parent="." instance=ExtResource("5_272bh")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 1, 10)
+
+[node name="Wall_windows" parent="." instance=ExtResource("6_5vw27")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, 1, 2)
+
+[node name="Wall_windows2" parent="." instance=ExtResource("6_5vw27")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8, 1, 6)
+
+[node name="Wall_windows3" parent="." instance=ExtResource("6_5vw27")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1, 2)
+
+[node name="Wall_windows4" parent="." instance=ExtResource("6_5vw27")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1, 6)
