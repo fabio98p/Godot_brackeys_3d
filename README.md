@@ -1,7 +1,7 @@
 # Godot_Brackeys_3d
 
 This is a game create following this tutorial 
-https://www.youtube.com/watch?v=LOhfqjmasi0
+https://www.youtube.com/watch?v=ke5KpqcoiIU
 
 ## Run Project
 
